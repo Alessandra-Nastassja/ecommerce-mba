@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "Camiseta",
+    "preco": 70,
+    "imagem": null,
+    "categoria": "Casual"
+  },
+  {
+    "nome": "Calça jeans",
+    "preco": 80,
+    "imagem": null,
+    "categoria": "Casual"
+  },
+  {
+    "nome": "Blusa",
+    "preco": 45,
+    "imagem": null,
+    "categoria": "Casual"
+  },
+  {
+    "nome": "Jaqueta",
+    "preco": 120,
+    "imagem": null,
+    "categoria": "Social"
+  },
+  {
+    "nome": "Short",
+    "preco": 70,
+    "imagem": null,
+    "categoria": "Casual"
+  },
+  {
+    "nome": "Camisa",
+    "preco": 85,
+    "imagem": null,
+    "categoria": "Social"
+  },
+  {
+    "nome": "Tenis",
+    "preco": 150,
+    "imagem": "./src/img/img.jpeg",
+    "categoria": "Casual"
+  }
+]
