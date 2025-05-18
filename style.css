@@ -143,9 +143,10 @@ section.content-subscribe {
     justify-content: space-between;
 }
 
-.card b, p { color: #000000; }
+.card b, p { color: #504f4f; }
 
 .card p {
+    text-transform: uppercase !important;
     margin-top: .5rem;
     font-size: 1rem;
 }
