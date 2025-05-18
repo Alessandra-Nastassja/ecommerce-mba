@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-    --cor-fundo: #EEEEEE;
-    --cor-principal: #31363F;
-    --cor-destaque: #76ABAE;
+    --cor-fundo: #FFFFFF;
+    --cor-principal: #90C2C3;
+    --cor-destaque: #F9D0D6;
+    --cor-link: #F2794D;
 }
 
 * {
@@ -22,10 +25,10 @@ body {
     z-index: 10;
 }
 
-header {
+.content-header {
     background-color: var(--cor-principal);
     color: var(--cor-fundo);
-    padding: 1.25rem;
+    padding: 0.5rem;   
     text-align: center;
 }
 
@@ -33,14 +36,16 @@ nav {
     margin-top: 0;
     background-color: var(--cor-destaque);
     width: 100%;
-    height: 2.5rem;
+    /* height: 2.5rem; */
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0.65rem 0;
+    padding: 3px 5px 10px 5px;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 nav ul li {
@@ -49,29 +54,86 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--cor-principal);
+    color: var(--cor-link);
     font-weight: bold;
     padding: 0.2rem;
 }
 
 nav ul li a:hover {
-    color: white;
-    background-color: var(--cor-principal);
+    color: #FFFFFF;
+    background-color: var(--cor-link);
     transition: all 0.3s ease;
     border-radius: 0.4rem;
 }
 
-.produtos {
+section.content-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 0px;
+
+    div {
+        background-color: var(--cor-principal);
+        color: #FFFFFF;
+        padding: 75px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 26px;
+    }
+
+    div b { 
+        font-size: 35px; 
+        text-transform: uppercase;
+    }
+    div i { 
+        font-family: "Playwrite DK Loopet", cursive;
+        text-transform: lowercase;
+        font-size: 30px; 
+        font-weight: 100;
+    } 
+
+    div:nth-child(1) { background-color: #F0A7C2; }
+    div:nth-child(2) { background-color: #FEB954; }
+    div:nth-child(3) { background-color: #F2794D; }
+    div:nth-child(4) { background-color: #FCBFAD; }
+}
+
+section.content-subscribe {
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 2rem 0;
+    text-align: center;
+
+    article b { 
+        font-size: 35px; 
+        text-transform: uppercase;
+    }
+
+    article p { 
+        font-family: "Playwrite DK Loopet", cursive;
+        text-transform: lowercase;
+        font-size: 30px; 
+        font-weight: 100;
+    }
+}
+
+.content-produtos {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding: 5rem;
+    padding: 0rem 2rem;
     flex-wrap: wrap;
 }
-
 .card {
     background-color: white;
-    border: 1px solid #ccc;
     padding: 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
@@ -81,9 +143,11 @@ nav ul li a:hover {
     justify-content: space-between;
 }
 
+.card b, p { color: #000000; }
+
 .card p {
     margin-top: .5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .card img {
@@ -93,12 +157,12 @@ nav ul li a:hover {
 }
 
 .card button {
-    background-color: var(--cor-destaque);
+    background-color: #F0A7C2;
     color: white;
     border: none;
     margin-top: 1rem;
     padding: 0.625rem;
-    border-radius: 0.25rem;
+    border-radius: 15px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -113,7 +177,6 @@ footer {
     text-align: center;
     padding: 1rem;
     width: 100%;
-    margin-top: 2rem;
 }
 
 @media (max-width: 1024px) {
